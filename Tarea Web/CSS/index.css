@@ -4,6 +4,7 @@
   padding: 0px;
 }
 
+/*-------------------------------------Index------------------------------------*/
 #contenido{
     width: 960;
     height: auto;
@@ -20,7 +21,7 @@ body{
   color: lightblue;
 }
 
-#seccion{ 
+#seccionIndex{
   width: 1000px;
   height: 540px;
   float: left;
@@ -68,6 +69,45 @@ footer{
   background-color: green;
   text-align: center;
 }
+/*-------------------------------------Index------------------------------------*/
+
+/*-------------------------------------Escocia------------------------------------*/
+#bodyEscocia{
+  background-image: url(http://www.zastavki.com/pictures/originals/2015/World___Scotland_Ruins_of_a_temple_on_the_lake_in_Scotland_097354_.jpg);
+}
+#contenidoEscocia{
+  width: 960;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+#HsectionEscocia{
+  color: blue;
+  font-size: 20px;
+  font-family: verdana;
+}
+.tableEscocia {
+  background-color: lightblue;
+  color: black;
+  font-size: 15px;
+  font-family: cursive;
+  border: 2px solid blue;
+  border-radius: 15px;
+  width: 100%;
+  opacity: 0.6;
+}
+#FEscocia{
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+  font-family: verdana;
+  border-radius: 15px;
+}
+
+/*-------------------------------------Escocia------------------------------------*/
+
 
 
 
