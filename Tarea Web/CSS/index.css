@@ -34,6 +34,13 @@ body{
   border-radius: 20px;
 }
 
+video {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
 header{
   height: 80px;
   background-color: lightgray;
@@ -48,18 +55,18 @@ nav{
   line-height: 50px;
 }
 
-aside{
+#seccionAside{
   width: 250px;
-  height: 530px;
+  height: 540px;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 50px;
+  border-radius: 20px;
   background-color: lightgreen;
   text-align: center;
   line-height: 50px;
-  border-radius: 10px;
   border-style: ridge;
 }
 
