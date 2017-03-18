@@ -124,6 +124,12 @@ footer{
   background-color: gray;
 }
 
+#HeaderContactos{
+  color: black;
+  font-size: 30px;
+  font-family: verdana;
+}
+
 #ContactosFormat{
   width: 960px;
   margin-top: 100px;
@@ -133,20 +139,19 @@ footer{
   text-align: center;
 }
 
-#HeaderContactos{
-  color: black;
-  font-size: 30px;
-  font-family: verdana;
-}
 .ContactosTabla {
-  border: 1px solid blue;
-  border-radius: 5px;
+  border: 2px solid blue;
   background-color: gray;
   color: black;
   font-size: 15px;
   font-family: verdana;
   width: 100%;
+  opacity: 0.6;
+}
 
+  .ContactosTabla th, .ContactosTabla td {
+    border: 2px solid blue;
+  }
 
 
 /*---------------------------------------*****----------------------------*/
