@@ -4,132 +4,179 @@
 }
 
 /*-------------------------------------Index------------------------------------*/
-#contenido{
-  width: 960px;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-
-}
-
-
-
 body{
-  background-color: #4B6682;
+  background-image: url(https://newevolutiondesigns.com/images/freebies/space-wallpaper-5.jpg);
   color: lightblue;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-
 #seccionIndex{
   width: 1000px;
   height: 540px;
   float: left;
-  background-color: lightgray;
-  text-align: center;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 50px;
   border-radius: 20px;
+  background: rgba(0,0,0,.3);
+  border-style: groove;
 }
-
-
-
 video {
   padding-top: 50px;
-  padding-right: 30px;
   padding-bottom: 50px;
-  padding-left: 80px;
+  padding-left: 20%;
 }
-
-header{
-  height: 80px;
-  background-color: lightgray;
-  text-align: center;
-  line-height: 80px;
-
-}
-
-nav{
-  height: 60px;
-  background-color: orange;
-  text-align: center;
-  line-height: 50px;
-
-
-}
-
 #seccionAside{
-  width: 250px;
-  height: 540px;
+  width: 200px;
+  height: 500px;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 50px;
   border-radius: 20px;
-  background-color: #BDA9E5;
   text-align: center;
   line-height: 50px;
-  border-style: ridge;
+  border-style: groove;
+  background: rgba(0,0,0,.3);
 }
-
+.links a{
+  color: lightblue;
+}
+.links a:hover{
+  color: yellow;
+}
 footer{
+  color: lightblue;
   height: 40px;
   clear:both;
-  background-color: green;
   text-align: center;
+  background: rgba(0,0,0,.5);
+  border-radius: 20px;
+}
+#Flink{
+  color: lightblue;
+}
+#Flink:hover{
+  color: yellow;
 }
 /*-------------------------------------Index------------------------------------*/
 
+/*-------------------------------------Barra de navegacion----------------------*/
+nav  {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+nav ul {
+    position: relative;
+    left: 30%;
+    margin: 80px 0 20px 0;
+    padding: .7em;
+    float: left;
+    list-style: none;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: .5em;
+    box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
+}
+nav li {
+    position: relative;
+    right: : 50%;
+    float:left;
+}
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #555;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    font: bold 1.1em/1 'trebuchet MS', Arial, Helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #ccc #999 #eee;
+    background: #c1c1c1;
+    background: linear-gradient(#f5f5f5, #c1c1c1);
+ }
+nav a:hover, nav a:focus {
+    outline: 0;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background: #fac754;
+    background: linear-gradient(#fac754, #f8ac00);
+}
+nav a:active {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+nav li:first-child a {
+    border-left: 0;
+    border-radius: 4px 0 0 4px;
+}
+nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 4px 4px 0;
+}
+
 /*-------------------------------------Escocia------------------------------------*/
 #bodyEscocia{
-  background-image: url(http://www.zastavki.com/pictures/originals/2015/World__Scotland_Ruins_of_a_temple_on_the_lake_in_Scotland_097354.jpg);
+  background-image: url(http://www.perroviajante.com/wp-content/uploads/2012/10/gb_edimburgo_ruinas_abadc3ada_de_holyrood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #contenidoEscocia{
-  width: 960px;
-  margin-top: 100px;
+  width: auto;
+  margin-top: 50px;
   margin-bottom: 20px;
   margin-left: 40px;
   margin-right: 40px;
   text-align: center;
 }
 #HsectionEscocia{
-  color: blue;
+  margin-bottom: 20px;
+  background:rgba(0,0,0,0.3);
+  border-radius: 15px;
+  color: white;
+  font-family: monospace;
   font-size: 20px;
-  font-family: verdana;
 }
 .tableEscocia {
-  background-color: lightblue;
-  color: black;
+  background:rgba(0,0,0,0.5);
+  width: 100%;
+  color: white;
   font-size: 15px;
-  font-family: cursive;
+  font-family: monospace;
   border: 2px solid blue;
   border-radius: 15px;
-  width: 100%;
-  opacity: 0.6;
+}
+.tableEscocia td {
+  border: 1px solid lightblue;
+  border-radius: 5px;
 }
 #FEscocia{
+  background:rgba(0,0,0,0.3);
   margin-top: 20px;
   color: white;
   font-size: 15px;
-  font-family: verdana;
+  font-family: monospace;
   border-radius: 15px;
 }
+
 /*-------------------------------------Cont------------------------------------*/
 #ContactosContenido{
   background-color: gray;
 }
-
 #HeaderContactos{
   color: black;
   font-size: 30px;
   font-family: verdana;
 }
-
 #ContactosFormat{
   width: 960px;
   margin-top: 100px;
@@ -138,7 +185,6 @@ footer{
   margin-right: 20px;
   text-align: center;
 }
-
 .ContactosTabla {
   border: 2px solid blue;
   background-color: gray;
@@ -148,52 +194,7 @@ footer{
   width: 100%;
   opacity: 0.6;
 }
-
-  .ContactosTabla th, .ContactosTabla td {
-    border: 2px solid blue;
-  }
-
-
+.ContactosTabla th, .ContactosTabla td {
+  border: 2px solid blue;
+}
 /*---------------------------------------*****----------------------------*/
-/*<style type="text/css">*/
-*{
-  padding: 0px;
-  margin: 0px;
-
-}
-#headerBarra{
-  margin: auto;
-  width: 500px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul, ol {
-  list-style: none;
-
-}
-.nav li a {
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-
-}
-.nav li a:hover {
-  background-color: #434343;
-}
-.nav > li{
-  float: left ;
-}
-
-.nav li ul {
-  position: absolute;
-  min-width: 140px;
-}
-.nav li ul li {
-  position: relative;
-}
-.nav li ul li  ul {
-  right: -140pc;
-  top: 0px;
-}
