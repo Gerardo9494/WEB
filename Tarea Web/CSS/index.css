@@ -121,18 +121,20 @@ footer{
 }
 /*-------------------------------------Cont------------------------------------*/
 #ContactosContenido{
-  background-color: gray;
+  background-color: #183059;
+
 }
 
 #HeaderContactos{
-  color: black;
-  font-size: 30px;
+  color: white;
+  font-size: 40px;
   font-family: verdana;
+  align-content: center;
 }
 
 #ContactosFormat{
-  width: 960px;
-  margin-top: 100px;
+  width: 1400px;
+  margin-top: 60px;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -140,9 +142,10 @@ footer{
 }
 
 .ContactosTabla {
-  border: 2px solid blue;
-  background-color: gray;
+  border: 2px solid wthite;
+  background-color: #7f99c4;
   color: black;
+  margin-top: 60px;
   font-size: 15px;
   font-family: verdana;
   width: 100%;
@@ -150,7 +153,8 @@ footer{
 }
 
   .ContactosTabla th, .ContactosTabla td {
-    border: 2px solid blue;
+    border: 2px solid white;
+
   }
 
 
