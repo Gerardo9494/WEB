@@ -4,6 +4,165 @@
 }
 
 /*-------------------------------------Index------------------------------------*/
+
+#seccionImage{
+  width: 400px;
+  height: 400px;
+  float: left;
+  text-align: justify;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-bottom: 50px;
+  margin-top: 7%;
+  margin-left: 5%;
+  -moz-box-shadow: 0 0 10px #fff;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+#seccionTexto{
+  width: 400px;
+  height: 400px;
+  float: right;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+/*   padding-top: 20px;
+  padding-left: 10px;
+  
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 50px; */
+  margin-top: 7%;
+  margin-right: 5%;
+  border-radius: 20px;
+  background: rgba(0,0,0,.3);
+  border-style: groove;
+}
+
+#reloj_format{
+	float: right;
+	background-color : Black;
+	border-radius: 20px;
+	color : White; 
+	font-family : Verdana, Arial, Helvetica; 
+	font-size : 8pt; 
+	text-align : center;
+	margin-right: 1%;
+	margin-top: -7px;
+}
+
+.w3-display-container{
+	position:relative
+}
+
+.w3-display-container:hover .w3-display-hover{
+	display:block
+}
+
+.w3-display-container:hover span.w3-display-hover{
+	display:inline-block
+}
+
+.w3-display-bottomleft{
+	position:absolute;
+	left:0;bottom:0
+}
+
+.w3-large{
+	font-size:18px!important;
+	text-shadow: 2px -1px 2px rgba(241, 138, 21, 1);
+}
+
+.w3-container:after,.w3-container:before {
+	content:"";
+	display:table;
+	clear:both
+}
+
+.w3-container{
+	padding:0.01em 8px;
+	
+}
+
+.w3-padding-8{
+	padding-top:8px!important;
+	padding-bottom:8px!important
+}
+
+.w3-black {
+	color:#fff!important;
+	background-color:#000!important
+}
+
+.w3-display-bottomright{
+	position:absolute;
+	right:0;
+	bottom:0
+}
+
+.w3-button{
+	border:none;
+	display:inline-block;
+	outline:0;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap
+}
+
+.w3-button{
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+.w3-button{
+	white-space:normal
+}
+
+.w3-button:hover{
+	color:#000!important;
+	background-color:#ccc!important
+}
+
+.w3-display-left{
+	position:absolute;
+	top:50%;
+	left:0%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%)
+}
+
+.w3-display-right{
+	
+	position:absolute;
+	top:50%;
+	right:0%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%)
+}
+
+h2.titulos_index{
+	font-weight: 600;
+	font-family: Avantgarde, sans-serif;
+	text-shadow: 2px -1px 2px rgba(221, 78, 21, 1);
+}
+
+
+
+
+/*-------------------------------------Micela e Index------------------------------------*/
 body{
   background-image: url(https://newevolutiondesigns.com/images/freebies/space-wallpaper-5.jpg);
   color: lightblue;
@@ -16,8 +175,8 @@ body{
   float: left;
   text-align: justify;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
@@ -26,14 +185,15 @@ body{
   background: rgba(0,0,0,.3);
   border-style: groove;
 }
+
 video {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 20%;
 }
 #seccionAside{
-  width: 200px;
-  height: 500px;
+  width: 170px;
+  height: 555px;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
@@ -47,9 +207,11 @@ video {
 }
 .links a{
   color: lightblue;
+  text-decoration:none;
 }
 .links a:hover{
   color: yellow;
+  text-decoration:none;
 }
 footer{
   color: lightblue;
@@ -61,11 +223,12 @@ footer{
 }
 #Flink{
   color: lightblue;
+  text-decoration:none;
 }
 #Flink:hover{
   color: yellow;
+  text-decoration:none;
 }
-/*-------------------------------------Index------------------------------------*/
 
 /*-------------------------------------Barra de navegacion----------------------*/
 nav  {
