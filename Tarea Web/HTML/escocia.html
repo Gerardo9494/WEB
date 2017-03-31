@@ -7,7 +7,7 @@
 		<meta charset = "iso 8859-1"/>
 		<meta name = "description" content = "Ejemplo de html5"/>
 		<meta name = "keywords" content = "html5, ccs3, js"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../CSS/index.css">
 	</head>
 
@@ -25,35 +25,52 @@
 					<table class="tableEscocia">
 					  <tr>
 					    <th>Nombre</th>
-					    <th>Lugar</th>
+					    <th>Precio del tour</th>
 					    <th>Tipo</th>
 							<th>Imagen</th>
 					  </tr>
 					  <tr>
 					    <td>Museo Kelvingrove</td>
-					    <td>None</td>
+					    <td>$75</td>
 					    <td>Galeria de arte</td>
 							<td><img src="https://www.euroviajar.com/wp-content/uploads/2013/09/Galeria-de-Arte-y-Museo-Kelvingrove.jpg" alt="" width=100px; height=70px;></td>
 					  </tr>
 					  <tr>
 							<td>Lago Ness</td>
-					    <td>None</td>
+					    <td>$155</td>
 					    <td>Lago</td>
 							<td><img src="http://www.eliberico.com/wp-content/uploads/2016/03/lago-ness.jpg" alt="" width=100px; height=70px;></td>
 					  </tr>
 					  <tr>
 							<td>Castillo de Edimburgo</td>
-					    <td>None</td>
+					    <td>$200</td>
 					    <td>Castillo</td>
 							<td><img src="http://www.ihistoriarte.com/wp-content/uploads/2013/04/Castillo-de-Edimburgo.-Credito-viajeaescocia.es_.jpg" alt="" width=100px; height=70px;></td>
 					  </tr>
 						<tr>
 							<td>Castillo de Glamis</td>
-					    <td>None</td>
+					    <td>$105</td>
 					    <td>Castillo</td>
 							<td><img src="http://2.bp.blogspot.com/-ags3em45PUM/VAS9-UBN0gI/AAAAAAAAB0g/-nqfoG4EdmQ/s1600/castillo%2Bglamis2.jpg" alt="" width=100px; height=70px;></td>
 					  </tr>
 					</table>
+					<script>
+						function promedio(){
+						var numero =[];
+						var suma = 0;
+						var promedio = 0;
+						var sitios = Number(prompt("Cuantos sitios desea visitar?"));
+						for (var i = 0; i < sitios; i++){
+							numero[i] = Number(prompt("Ingrese el precio de los sitios que desea visitar"));
+							suma = suma + numero[i];
+							promedio = suma/sitios;
+						}
+						window.alert('El costo total por visitar '+ sitios + ' sitios es de $' +suma + ' con un promedio de $' + promedio.toFixed(2));
+						}
+					</script>
+					<form>
+						<input style="margin-top:10px; width:250px; float: center;" type="button" onclick="promedio()"  value="Calcular costo">
+					</form>
 			</section>
 
 			<footer id="FEscocia">
@@ -64,4 +81,3 @@
 	</body>
 
 </html>
-
