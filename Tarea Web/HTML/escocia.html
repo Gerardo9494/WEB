@@ -10,14 +10,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../CSS/index.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="../JS/jquery-ui.js"></script>
+		<script>
+	        $( function() {
+	            $( "#draggable" ).draggable();
+	        } );
+		</script>
 	</head>
 
 	<body id="bodyEscocia">
 		<div id="contenidoEscocia">
-			<nav>
+			<nav id=draggable>
 				<ul>
 						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html">Que es una miscela?</a></li>
+						<li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
 						<li><a href="Contactos.html">Contactos</a></li>
 				</ul>
 			</nav>
@@ -73,7 +79,7 @@
 						<input style="margin-top:10px; width:250px; float: center;" type="button" onclick="promedio()"  value="Calcular costo">
 					</form>
 			</section>
-			
+
 			<script>
 			$(document).ready(function(){
 				$("#slideshow > div:gt(0)").hide();
@@ -120,7 +126,7 @@
 					 <img src="../files/escocia10.jpg" style="width: 240px; height: 240px;">
 			   </div>
 			</div>
-			
+
 			<footer id="FEscocia">
 				<h2>Desarrollo web</h2>
 			</footer>
@@ -129,3 +135,6 @@
 	</body>
 
 </html>
+
+
+
