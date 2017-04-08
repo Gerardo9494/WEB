@@ -9,6 +9,7 @@
 	<meta name = "keywords" content = "html5, ccs3"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../CSS/index.css">
+	<script src="../JS/script.js"></script>
 	<script src="../JS/jquery.js"></script>
 	<script src="../JS/jquery-ui.js"></script>
 
@@ -74,7 +75,7 @@
 
 
   
-<section id="seccionIndex">
+<section id="seccionMain">
 
 	<section id="seccionImage">
 		<div class="w3-content w3-display-container ">
@@ -160,6 +161,14 @@
 	<form name="form_reloj" >
 		<input id="reloj_format" type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
 	</form>
+	<div id="clock" class="light">
+			<div class="display">
+				<div class="weekdays"></div>
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+	</div>
 </footer>
 </body>
 
