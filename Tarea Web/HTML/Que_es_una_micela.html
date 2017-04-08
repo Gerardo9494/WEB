@@ -8,17 +8,37 @@
     <meta name = "description" content = "Ejemplo de html5"/>
     <meta name = "keywords" content = "html5, ccs3"/>
     <link rel="stylesheet" href="../CSS/index.css">
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog();
+        } );
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="../JS/jquery-ui.js"></script>
     <script>
           $( function() {
               $( "#draggable" ).draggable();
           } );
+>
     </script>
 </head>
 
 <body>
+
+
+<div id="dialog" title="CUADRO INFORMATIVO">
+    <p>En esta seccion se hace una pequena explicacion sobre lo que es una micela y sus aplicaciones.</p>
+</div>
+
+<nav>
+
+  
+  
 <nav id="draggable">
+
     <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
@@ -34,7 +54,7 @@
 						padding-bottom:20px">Micela</h2>
         <p style="color:white;
 						font-size:20px;
-						font-family:verdana"> Se denomina micela al conjunto de moléculas que constituye una de las fases de los coloides. Es el mecanismo por el
+						font-family:verdana"> Se denomina micela al conjunto de moleculas que constituye una de las fases de los coloides. Es el mecanismo por el
             cual el jabón solubiliza las moléculas insolubles en agua, como las grasas. De forma semejante, los lípidos polares en disolución acuosa
             diluida se dispersan formando micelas. </p>
         <video width="600" controls>
@@ -64,4 +84,3 @@
 </body>
 
 </html>
-

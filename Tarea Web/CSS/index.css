@@ -45,10 +45,10 @@
 #reloj_format{
 	float: right;
 	background-color : Black;
-	border-radius: 20px;
+	border-radius: 30px;
 	color : White; 
 	font-family : Verdana, Arial, Helvetica; 
-	font-size : 8pt; 
+	font-size : 15pt;
 	text-align : center;
 	margin-right: 1%;
 	margin-top: -7px;
@@ -215,7 +215,7 @@ video {
 }
 footer{
   color: lightblue;
-  height: 40px;
+  height: 45px;
   clear:both;
   text-align: center;
   background: rgba(0,0,0,.5);
@@ -250,7 +250,10 @@ nav ul {
 }
 nav li {
     position: relative;
+
+=======
     right : 0%;
+
     float:left;
 }
 nav a {
