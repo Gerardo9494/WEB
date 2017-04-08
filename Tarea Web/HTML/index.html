@@ -2,168 +2,148 @@
 
 <html lang = "es">
 
-	<head>
-
-		<title>HTML5 Tarea</title>
-		<meta charset = "iso 8859-1"/>
-		<meta name = "description" content = "Ejemplo de html5"/>
-		<meta name = "keywords" content = "html5, ccs3"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../CSS/index.css">
-
-
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>jQuery UI Dialog - Default functionality</title>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="/resources/demos/style.css">
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script>
+<head>
+	<title>HTML5 Tarea</title>
+	<meta charset = "iso 8859-1"/>
+	<meta name = "description" content = "Ejemplo de html5"/>
+	<meta name = "keywords" content = "html5, ccs3"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../CSS/index.css">
+	<script src="../JS/jquery.js"></script>
+	<script src="../JS/jquery-ui.js"></script>
+  <script>
             $( function() {
                 $( "#dialog" ).dialog();
             } );
 		</script>
+	<script>
+        $( function() {
+            $( "#draggable" ).draggable();
+        } );
+	</script>
+	<script language="JavaScript">
+        function mueveReloj(){
+            momentoActual = new Date()
+            hora = momentoActual.getHours()
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+            str_segundo = new String (segundo)
+            if (str_segundo.length == 1)
+                segundo = "0" + segundo
+            str_minuto = new String (minuto)
+            if (str_minuto.length == 1)
+                minuto = "0" + minuto
+            str_hora = new String (hora)
+            if (str_hora.length == 1)
+                hora = "0" + hora
+            horaImprimible = hora + " : " + minuto + " : " + segundo
+            document.form_reloj.reloj.value = horaImprimible
+            setTimeout("mueveReloj()",1000)
+        }
+	</script>
+</head>
 
+<body onload="mueveReloj()">
+<nav id="draggable" class="ui-widget-content">
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
+		<li><a href="Contactos.html">Contactos</a></li>
+	</ul>
+</nav>
 
-				<script language="JavaScript">
-					function mueveReloj(){ 
-						momentoActual = new Date() 
-						hora = momentoActual.getHours() 
-						minuto = momentoActual.getMinutes() 
-						segundo = momentoActual.getSeconds() 
-
-						str_segundo = new String (segundo) 
-						if (str_segundo.length == 1) 
-							segundo = "0" + segundo 
-
-						str_minuto = new String (minuto) 
-						if (str_minuto.length == 1) 
-							minuto = "0" + minuto 
-
-						str_hora = new String (hora) 
-						if (str_hora.length == 1) 
-							hora = "0" + hora 
-
-						horaImprimible = hora + " : " + minuto + " : " + segundo 
-
-						document.form_reloj.reloj.value = horaImprimible 
-
-						setTimeout("mueveReloj()",1000) 
-					} 
-				</script>  
-	</head>
-
-	<body onload="mueveReloj()">
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
-				<li><a href="Contactos.html">Contactos</a></li>
-			</ul>
-		</nav>
-
-
-
-		<div id="dialog" title="CUADRO INFORMATIVO">
+  <div id="dialog" title="CUADRO INFORMATIVO">
 			<p>En esta seccion podra encontrar informacion sobre historia de los grupos de musica METAL </p>
 		</div>
+  
+<section id="seccionIndex">
 
+	<section id="seccionImage">
+		<div class="w3-content w3-display-container ">
 
+			<div class="w3-display-container mySlides">
+				<img src="../Files/metallica.jpg" >
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
+					Metallica, One
+				</div>
+			</div>
 
+			<div class="w3-display-container mySlides">
+				<img src="../Files/bulls_on_parade.jpg" >
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
+					RATM, Bulls on Parade
+				</div>
+			</div>
 
+			<div class="w3-display-container mySlides">
+				<img src="../Files/black_sabbath_paranoid.jpg" >
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
+					Black Sabbath, Paranoid
+				</div>
+			</div>
 
-		
-				<section id="seccionIndex">
+			<div class="w3-display-container mySlides">
+				<img src="../Files/welcome_jungle.jpg" >
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
+					Guns n' Roses, Welcome to the Jungle
+				</div>
+			</div>
 
-							<section id="seccionImage">
-								<div class="w3-content w3-display-container ">
+			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
-									<div class="w3-display-container mySlides">
-									  <img src="../Files/metallica.jpg" >
-									  <div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
-										Metallica, One
-									  </div>
-									</div>
+		</div>
 
-									<div class="w3-display-container mySlides">
-									  <img src="../Files/bulls_on_parade.jpg" >
-									  <div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
-										RATM, Bulls on Parade
-									  </div>
-									</div>
+		<script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
+		</script>
+	</section>
 
-									<div class="w3-display-container mySlides">
-									  <img src="../Files/black_sabbath_paranoid.jpg" >
-									  <div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
-										Black Sabbath, Paranoid
-									  </div>
-									</div>
+	<section id="seccionTexto">
+		<br>
+		<h2 class="titulos_index">Historia del Rock...</h2><br>
+		<p>A finales de la década de 1960, referida como la "era dorada" o el periodo del "rock clásico", surgieron distintos subgéneros distintivos del rock, híbridos como el blues rock, folk rock, country rock y el jazz rock fusión, muchos de los cuales contribuyeron al desarrollo del rock psicodélico, influenciado por la escena psicodélica contra-cultural.</p><br>
+		<p>Los nuevos géneros que emergieron de esta escena incluyen el rock progresivo, que extendió los elementos artísticos; el glam rock, que resaltó el espectáculo en vivo y el estilo visual; y el subgénero mayor, diverso y longevo que es el heavy metal, que se centraba en el volumen, el poder y la velocidad.</p><br>
 
-									<div class="w3-display-container mySlides">
-									  <img src="../Files/welcome_jungle.jpg" >
-									  <div class="w3-display-bottomleft w3-large w3-container w3-padding-8 w3-black">
-										Guns n' Roses, Welcome to the Jungle
-									  </div>
-									</div>
+		<p>Se observan bandas representativas que trascendieron con temas como: <em>One de Metallica, Paranoid de Black Sabbath, Bulls on Parade de Rage Against the Machine o Welcome to the Jungle de Guns n' Roses.</em></p>
+	</section>
 
-									<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-									<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</section>
 
-									</div>
+<section id="seccionAside">
+	<aside>
+		<h2 class="titulos_index">Publicidad</h2>
+		<dl class="links">
+			<dt><a href="escocia.html" target="_blank">Escocia</a></dt>
+			<dt><a href="https://www.visitscotland.com/see-do/attractions/castles/" target="_blank">Visite Escocia</a></dt>
+			<dt><img src="https://media.giphy.com/media/OfKPxZoeeEHF6/giphy.gif" alt="" width=100px; height=100px;></dt>
+			<dt><a href="https://www.airbnb.com/" target="_blank">Reserve en AirBnB</a></dt>
+			<dt><img src="http://www.tokyonightowl.com/wp-content/uploads/2015/01/airbnb-tokyo-nightlife.jpg" alt="" width=100px; height=100px;></dt>
+		</dl>
+	</aside>
+</section>
 
-									<script>
-									var slideIndex = 1;
-									showDivs(slideIndex);
-
-									function plusDivs(n) {
-									  showDivs(slideIndex += n);
-									}
-
-									function showDivs(n) {
-									  var i;
-									  var x = document.getElementsByClassName("mySlides");
-									  if (n > x.length) {slideIndex = 1}    
-									  if (n < 1) {slideIndex = x.length}
-									  for (i = 0; i < x.length; i++) {
-										 x[i].style.display = "none";  
-									  }
-									  x[slideIndex-1].style.display = "block";  
-									}
-									</script>
-							</section>
-							
-							<section id="seccionTexto">
-								<br>
-								<h2 class="titulos_index">Historia del Rock...</h2><br>
-								<p>A finales de la década de 1960, referida como la "era dorada" o el periodo del "rock clásico", surgieron distintos subgéneros distintivos del rock, híbridos como el blues rock, folk rock, country rock y el jazz rock fusión, muchos de los cuales contribuyeron al desarrollo del rock psicodélico, influenciado por la escena psicodélica contra-cultural.</p><br>
-								<p>Los nuevos géneros que emergieron de esta escena incluyen el rock progresivo, que extendió los elementos artísticos; el glam rock, que resaltó el espectáculo en vivo y el estilo visual; y el subgénero mayor, diverso y longevo que es el heavy metal, que se centraba en el volumen, el poder y la velocidad.</p><br>
-								
-								<p>Se observan bandas representativas que trascendieron con temas como: <em>One de Metallica, Paranoid de Black Sabbath, Bulls on Parade de Rage Against the Machine o Welcome to the Jungle de Guns n' Roses.</em></p>
-							</section>
-							
-				</section>
-
-			<section id="seccionAside">
-				<aside>
-						<h2 class="titulos_index">Publicidad</h2>
-						<dl class="links">
-							<dt><a href="escocia.html" target="_blank">Escocia</a></dt>
-							<dt><a href="https://www.visitscotland.com/see-do/attractions/castles/" target="_blank">Visite Escocia</a></dt>
-							<dt><img src="https://media.giphy.com/media/OfKPxZoeeEHF6/giphy.gif" alt="" width=100px; height=100px;></dt>
-							<dt><a href="https://www.airbnb.com/" target="_blank">Reserve en AirBnB</a></dt>
-							<dt><img src="http://www.tokyonightowl.com/wp-content/uploads/2015/01/airbnb-tokyo-nightlife.jpg" alt="" width=100px; height=100px;></dt>
-						</dl>
-				</aside>
-      </section>
-
-			<footer>
-				<a id="Flink" href="contactos.html" target="_blank">Contactos</a>
-					<form name="form_reloj" > 
-						<input id="reloj_format" type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()"> 
-					</form>  
-			</footer>
-
-	</body>
+<footer>
+	<a id="Flink" href="contactos.html" target="_blank">Contactos</a>
+	<form name="form_reloj" >
+		<input id="reloj_format" type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
+	</form>
+</footer>
+</body>
 
 </html>
 
