@@ -9,19 +9,20 @@
   <meta name = "description" content = "Ejemplo de html5"/>
   <meta name = "keywords" content = "html5, ccs3, js"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/index.css">                    
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="../CSS/index.css">
 
-  
+
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+
+
     <script>
         $( function() {
             $( "#dialog" ).dialog();
         } );
     </script>
 
-  <script src="../JS/jquery.js"></script>
-	<script src="../JS/jquery-ui.js"></script>
+
   <script>
         $( function() {
             $( "#draggable" ).draggable();
@@ -45,6 +46,8 @@
 
 
             <div id="dialog" title="CUADRO INFORMATIVO">
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="/resources/demos/style.css">
                 <p>En esta seccion podran encontrar los contactos de los creadores de la pagina.</p>
             </div>
 

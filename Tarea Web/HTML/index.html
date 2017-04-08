@@ -11,16 +11,25 @@
 	<link rel="stylesheet" href="../CSS/index.css">
 	<script src="../JS/jquery.js"></script>
 	<script src="../JS/jquery-ui.js"></script>
-  <script>
-            $( function() {
-                $( "#dialog" ).dialog();
-            } );
-		</script>
+
+
+
+	<script>
+        $( function() {
+            $( "#dialog" ).dialog();
+        } );
+	</script>
+
+
+
 	<script>
         $( function() {
             $( "#draggable" ).draggable();
         } );
+
 	</script>
+
+
 	<script language="JavaScript">
         function mueveReloj(){
             momentoActual = new Date()
@@ -44,7 +53,18 @@
 </head>
 
 <body onload="mueveReloj()">
-<nav id="draggable" class="ui-widget-content">
+
+
+
+
+<nav id="dialog" title="CUADRO INFORMATIVO">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<p>En esta seccion podra encontrar informacion sobre historia de los grupos de musica METAL </p>
+</nav>
+
+
+<nav id="draggable">
 	<ul>
 		<li><a href="index.html">Inicio</a></li>
 		<li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
@@ -52,9 +72,7 @@
 	</ul>
 </nav>
 
-  <div id="dialog" title="CUADRO INFORMATIVO">
-			<p>En esta seccion podra encontrar informacion sobre historia de los grupos de musica METAL </p>
-		</div>
+
   
 <section id="seccionIndex">
 
