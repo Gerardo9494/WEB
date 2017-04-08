@@ -9,14 +9,25 @@
   <meta name = "description" content = "Ejemplo de html5"/>
   <meta name = "keywords" content = "html5, ccs3, js"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="../JS/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../CSS/index.css">                    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+  
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog();
+        } );
+    </script>
+
+  <script src="../JS/jquery.js"></script>
+	<script src="../JS/jquery-ui.js"></script>
   <script>
         $( function() {
             $( "#draggable" ).draggable();
         } );
   </script>
+
 
 
 <body id="ContactosContenido">
@@ -31,6 +42,12 @@
 	    <section>
 
 <h2 id="HeaderContactos">Lista de Contactos</h2>
+
+
+            <div id="dialog" title="CUADRO INFORMATIVO">
+                <p>En esta seccion podran encontrar los contactos de los creadores de la pagina.</p>
+            </div>
+
 
           <table class="ContactosTabla">
 
@@ -64,7 +81,7 @@
               <th>Moises Fallas</td>
               <th>moisolk@hotmail.com</td>
               <th><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-Live-Hotmail-Metro-icon.png" alt="" width=80px; height=80px;></th>
-        <tr>
+        </tr>
         </table>
     </section>
 
