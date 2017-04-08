@@ -9,14 +9,21 @@
 		<meta name = "keywords" content = "html5, ccs3, js"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../CSS/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="../JS/jquery-ui.js"></script>
+		<script>
+	        $( function() {
+	            $( "#draggable" ).draggable();
+	        } );
+		</script>
 	</head>
 
 	<body id="bodyEscocia">
 		<div id="contenidoEscocia">
-			<nav>
+			<nav id=draggable>
 				<ul>
 						<li><a href="index.html">Inicio</a></li>
-						<li><a href="index.html">Que es una miscela?</a></li>
+						<li><a href="Que_es_una_micela.html">Que es una miscela?</a></li>
 						<li><a href="Contactos.html">Contactos</a></li>
 				</ul>
 			</nav>
@@ -73,6 +80,53 @@
 					</form>
 			</section>
 
+			<script>
+			$(document).ready(function(){
+				$("#slideshow > div:gt(0)").hide();
+				setInterval(function() {
+				$('#slideshow > div:first')
+					.fadeOut(2000)
+					.next()
+					.fadeIn(2000)
+					.end()
+					.appendTo('#slideshow');
+				}, 3000);
+			});
+			</script>
+
+			<div id="slideshow">
+			   <div>
+			     <img src="../files/escocia1.jpg" style="width: 240px; height: 240px;">
+			   </div>
+			   <div>
+			     <img src="../files/escocia2.jpg" style="width: 240px; height: 240px;">
+			   </div>
+			   <div>
+					 <img src="../files/escocia3.jpg" style="width: 240px; height: 240px;">
+			   </div>
+				 <div>
+					 <img src="../files/escocia4.jpg" style="width: 240px; height: 240px;">
+			   </div>
+				 <div>
+					 <img src="../files/escocia5.jpg" style="width: 240px; height: 240px;">
+			   </div>
+				 <div>
+			     <img src="../files/escocia6.jpg" style="width: 240px; height: 240px;">
+			   </div>
+			   <div>
+			     <img src="../files/escocia7.jpg" style="width: 240px; height: 240px;">
+			   </div>
+			   <div>
+					 <img src="../files/escocia8.jpg" style="width: 240px; height: 240px;">
+			   </div>
+				 <div>
+					 <img src="../files/escocia9.jpg" style="width: 240px; height: 240px;">
+			   </div>
+				 <div>
+					 <img src="../files/escocia10.jpg" style="width: 240px; height: 240px;">
+			   </div>
+			</div>
+
 			<footer id="FEscocia">
 				<h2>Desarrollo web</h2>
 			</footer>
@@ -81,3 +135,6 @@
 	</body>
 
 </html>
+
+
+
