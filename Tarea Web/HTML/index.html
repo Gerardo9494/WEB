@@ -3,13 +3,29 @@
 <html lang = "es">
 
 	<head>
+
 		<title>HTML5 Tarea</title>
 		<meta charset = "iso 8859-1"/>
 		<meta name = "description" content = "Ejemplo de html5"/>
 		<meta name = "keywords" content = "html5, ccs3"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../CSS/index.css">
-				<script language="JavaScript"> 
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery UI Dialog - Default functionality</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+            $( function() {
+                $( "#dialog" ).dialog();
+            } );
+		</script>
+
+
+				<script language="JavaScript">
 					function mueveReloj(){ 
 						momentoActual = new Date() 
 						hora = momentoActual.getHours() 
@@ -45,9 +61,20 @@
 				<li><a href="Contactos.html">Contactos</a></li>
 			</ul>
 		</nav>
+
+
+
+		<div id="dialog" title="CUADRO INFORMATIVO">
+			<p>En esta seccion podra encontrar informacion sobre historia de los grupos de musica METAL </p>
+		</div>
+
+
+
+
+
 		
 				<section id="seccionIndex">
-							
+
 							<section id="seccionImage">
 								<div class="w3-content w3-display-container ">
 
@@ -135,6 +162,7 @@
 						<input id="reloj_format" type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()"> 
 					</form>  
 			</footer>
+
 	</body>
 
 </html>

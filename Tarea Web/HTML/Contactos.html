@@ -10,6 +10,17 @@
   <meta name = "keywords" content = "html5, ccs3, js"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog();
+        } );
+    </script>
+
 
 <body id="ContactosContenido">
   <nav>
@@ -23,6 +34,12 @@
 	    <section>
 
 <h2 id="HeaderContactos">Lista de Contactos</h2>
+
+
+            <div id="dialog" title="CUADRO INFORMATIVO">
+                <p>En esta seccion podran encontrar los contactos de los creadores de la pagina.</p>
+            </div>
+
 
           <table class="ContactosTabla">
 
@@ -56,7 +73,7 @@
               <th>Moises Fallas</td>
               <th>moisolk@hotmail.com</td>
               <th><img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-Live-Hotmail-Metro-icon.png" alt="" width=80px; height=80px;></th>
-        <tr>
+        </tr>
         </table>
     </section>
 
